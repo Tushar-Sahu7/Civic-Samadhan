@@ -1,0 +1,50 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Civic Samadhan API",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/issues": {
+      "post": {
+        "summary": "Report a new civic issue",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewIssue"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Issue created successfully"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "NewIssue": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "location": {
+            "type": "object"
+          },
+          "category": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
