@@ -12,7 +12,7 @@ import { DefaultPageLayout } from './ui/layouts/DefaultPageLayout';
 
 function Login() {
   return (
-    <DefaultPageLayout>
+    <div className="flex h-screen w-full flex-col items-center">
       <div className="flex h-full w-full items-center justify-center bg-neutral-50 px-12 py-12">
         <div className="flex max-w-[448px] grow shrink-0 basis-0 flex-col items-center justify-center gap-6 rounded-md bg-default-background px-12 py-12 shadow-lg">
           <div className="flex w-full flex-col items-center justify-center gap-8">
@@ -118,7 +118,7 @@ function Login() {
           </div>
         </div>
       </div>
-    </DefaultPageLayout>
+    </div>
   );
 }
 

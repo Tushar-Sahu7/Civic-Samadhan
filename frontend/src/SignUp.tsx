@@ -11,11 +11,10 @@ import { FeatherLock } from '@subframe/core';
 import { FeatherMail } from '@subframe/core';
 import { FeatherPhone } from '@subframe/core';
 import { FeatherUser } from '@subframe/core';
-import { DefaultPageLayout } from './ui/layouts/DefaultPageLayout';
 
 function Signup() {
   return (
-    <DefaultPageLayout>
+    <div className="flex h-screen w-full flex-col items-center">
       <div className="container max-w-none flex h-full w-full flex-col items-center justify-center gap-6 bg-default-background py-12">
         <div className="flex w-full max-w-[768px] flex-col items-start gap-6 rounded-md border border-solid border-neutral-border bg-default-background px-12 py-12 shadow-lg self-center">
           <div className="flex w-full flex-col items-start gap-2">
@@ -311,7 +310,7 @@ function Signup() {
           </div>
         </div>
       </div>
-    </DefaultPageLayout>
+    </div>
   );
 }
 

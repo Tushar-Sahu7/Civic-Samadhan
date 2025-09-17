@@ -35,7 +35,7 @@ import { DefaultPageLayout } from './ui/layouts/DefaultPageLayout';
 function CitizenDashboard() {
   return (
     <DefaultPageLayout>
-      <div className="container max-w-none flex h-full w-full flex-col items-start gap-8 bg-default-background py-12">
+      <div className="container max-w-none flex h-full w-full flex-col items- gap-8 bg-default-background py-12 ">
         <div className="flex w-full items-center justify-between">
           <div className="flex items-center gap-4">
             <Avatar

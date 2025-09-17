@@ -37,6 +37,7 @@ import { FeatherTwitter } from '@subframe/core';
 import { FeatherUsers } from '@subframe/core';
 import { FeatherYoutube } from '@subframe/core';
 import { FeatherZap } from '@subframe/core';
+import AutoImageSlider from './AutoImageSlider';
 
 function CivicSamadhanLanding() {
   return (
@@ -45,7 +46,7 @@ function CivicSamadhanLanding() {
         <div className="flex w-full max-w-[1280px] flex-wrap items-center justify-between">
           <div className="flex min-w-[448px] grow shrink-0 basis-0 flex-col items-start gap-8 ">
             <div className="flex flex-col items-start gap-6">
-              <div className="items-center gap-2 rounded-full px-4 py-2 inline-flex bg-gradient-to-r border border-brand-200 transition-all duration-300 cursor-pointer from-brand-500 to-purple-500">
+              <div className="items-center gap-2 rounded-full px-4 py-2 inline-flex bg-gradient-to-r border border-brand-200 transition-all duration-300 cursor-pointer from-brand-500 to-purple-500 backdrop-blur-xl shadow-xl">
                 <IconWithBackground
                   variant="warning"
                   size="small"
@@ -56,7 +57,11 @@ function CivicSamadhanLanding() {
                 </span>
               </div>
               <span className="text-heading-1 font-heading-1 text-default-font">
-                Fix Your Neighborhood in 30 Seconds
+                Fix Your Neighborhood in{' '}
+                <span className="bg-gradient-to-r to-purple-500 from-blue-500 text-transparent bg-clip-text text-5xl">
+                  30
+                </span>{' '}
+                Seconds
               </span>
               <span className="text-heading-3 font-heading-3 text-subtext-color">
                 Report local issues, track progress, and join your community in
@@ -65,7 +70,8 @@ function CivicSamadhanLanding() {
             </div>
             <div className="flex items-center gap-6">
               <Button
-                className="hover:scale-105 hover:scale-105:hover hover:from-brand-600:hover hover:from-brand-600 hover:to-brand-700:hover hover:to-brand-700 hover:shadow-md:hover hover:shadow-md transition-all duration-300 shadow-sm bg-gradient-to-r from-brand-500 to-brand-600"
+                className="hover:shadow-md:hover hover:shadow-md transition-all duration-300 shadow-sm"
+                variant="brand-primary"
                 size="large"
                 icon={<FeatherAlertCircle />}
                 onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
@@ -73,7 +79,7 @@ function CivicSamadhanLanding() {
                 Report an Issue Now
               </Button>
               <Button
-                className="border hover:shadow-md:hover hover:shadow-md transition-all duration-300 shadow-sm border-brand-200 bg-gradient-to-r from-white"
+                className="border hover:shadow-md:hover hover:shadow-md transition-all duration-300 shadow-sm"
                 variant="neutral-primary"
                 size="large"
                 icon={<FeatherMap />}
@@ -84,12 +90,13 @@ function CivicSamadhanLanding() {
             </div>
           </div>
           <div className="flex min-w-[320px] grow shrink-0 basis-0 items-center justify-center">
-            <div className="flex items-start overflow-hidden rounded-2xl">
+            {/* <div className="flex items-start overflow-hidden rounded-2xl">
               <img
                 className="h-96 grow shrink-0 basis-0 object-cover"
                 src="https://res.cloudinary.com/subframe/image/upload/v1711417576/shared/bsa3eonjzvhxusz9aqgr.png"
               />
-            </div>
+            </div> */}
+            <AutoImageSlider />
           </div>
         </div>
         <div className="flex w-full max-w-[1280px] flex-col items-center gap-16">

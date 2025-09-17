@@ -152,11 +152,6 @@
     padding-left: calc((100vw + 16px - 1280px) / 2);
     padding-right: calc((100vw + 16px - 1280px) / 2);
   }
-
-  @media (width >=theme(--breakpoint-2xl)) {
-    padding-left: calc((100vw + 16px - 1536px) / 2);
-    padding-right: calc((100vw + 16px - 1536px) / 2);
-  }
 }
 
 @custom-variant mobile (@media (max-width: 767px));

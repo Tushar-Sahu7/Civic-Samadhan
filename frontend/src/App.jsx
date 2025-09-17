@@ -9,7 +9,7 @@ import CivicSamadhanLanding from './CivicSamadhanLanding';
 // Placeholder for authentication logic
 const isLoggedIn = () => {
   // Replace with actual authentication check
-  return false;
+  return true;
 };
 
 const ProtectedRoute = ({ children }) => {
