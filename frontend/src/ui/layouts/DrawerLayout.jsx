@@ -9,16 +9,9 @@ import React from "react";
 import { Drawer } from "../components/Drawer";
 import * as SubframeUtils from "../utils";
 
-interface DrawerLayoutRootProps extends React.ComponentProps<typeof Drawer> {
-  children?: React.ReactNode;
-  className?: string;
-}
 
-const DrawerLayoutRoot = React.forwardRef<
-  React.ElementRef<typeof Drawer>,
-  DrawerLayoutRootProps
->(function DrawerLayoutRoot(
-  { children, className, ...otherProps }: DrawerLayoutRootProps,
+const DrawerLayoutRoot = React.forwardRef(function DrawerLayoutRoot(
+  { children, className, ...otherProps },
   ref
 ) {
   return (

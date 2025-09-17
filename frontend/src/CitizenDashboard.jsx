@@ -57,14 +57,14 @@ function CitizenDashboard() {
             <Button
               variant="neutral-secondary"
               icon={<FeatherBell />}
-              onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
+              onClick={(event) => {}}
             >
               Notifications
             </Button>
             <Button
               variant="neutral-secondary"
               icon={<FeatherSettings />}
-              onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
+              onClick={(event) => {}}
             >
               Settings
             </Button>
@@ -74,7 +74,7 @@ function CitizenDashboard() {
           <Button
             size="large"
             icon={<FeatherPlusCircle />}
-            onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
+            onClick={(event) => {}}
           >
             Report New Issue
           </Button>
@@ -82,7 +82,7 @@ function CitizenDashboard() {
             variant="neutral-primary"
             size="large"
             icon={<FeatherMap />}
-            onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
+            onClick={(event) => {}}
           >
             View Nearby Issues
           </Button>
@@ -90,7 +90,7 @@ function CitizenDashboard() {
             variant="neutral-primary"
             size="large"
             icon={<FeatherList />}
-            onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
+            onClick={(event) => {}}
           >
             Track My Issues
           </Button>
@@ -98,7 +98,7 @@ function CitizenDashboard() {
             variant="neutral-primary"
             size="large"
             icon={<FeatherStar />}
-            onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
+            onClick={(event) => {}}
           >
             Give Feedback
           </Button>
@@ -178,7 +178,7 @@ function CitizenDashboard() {
                   <IconButton
                     size="small"
                     icon={<FeatherMoreVertical />}
-                    onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
+                    onClick={(event) => {}}
                   />
                 </div>
               </div>
@@ -220,7 +220,7 @@ function CitizenDashboard() {
                       size="small"
                       icon={<FeatherNavigation />}
                       onClick={(
-                        event: React.MouseEvent<HTMLButtonElement>
+                        event
                       ) => {}}
                     >
                       Get Directions
@@ -258,7 +258,7 @@ function CitizenDashboard() {
                   <IconButton
                     size="small"
                     icon={<FeatherMoreVertical />}
-                    onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
+                    onClick={(event) => {}}
                   />
                 </div>
               </div>
@@ -300,7 +300,7 @@ function CitizenDashboard() {
                       size="small"
                       icon={<FeatherNavigation />}
                       onClick={(
-                        event: React.MouseEvent<HTMLButtonElement>
+                        event
                       ) => {}}
                     >
                       Get Directions
@@ -338,7 +338,7 @@ function CitizenDashboard() {
                   <IconButton
                     size="small"
                     icon={<FeatherMoreVertical />}
-                    onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
+                    onClick={(event) => {}}
                   />
                 </div>
               </div>
@@ -378,7 +378,7 @@ function CitizenDashboard() {
                       size="small"
                       icon={<FeatherNavigation />}
                       onClick={(
-                        event: React.MouseEvent<HTMLButtonElement>
+                        event
                       ) => {}}
                     >
                       Get Directions
@@ -401,7 +401,7 @@ function CitizenDashboard() {
           <Button
             variant="neutral-tertiary"
             icon={<FeatherFilter />}
-            onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
+            onClick={(event) => {}}
           >
             Filter
           </Button>
@@ -418,7 +418,7 @@ function CitizenDashboard() {
             <Button
               variant="neutral-tertiary"
               size="small"
-              onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
+              onClick={(event) => {}}
             >
               View All
             </Button>
@@ -447,7 +447,7 @@ function CitizenDashboard() {
                 <IconButton
                   size="small"
                   icon={<FeatherMoreVertical />}
-                  onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
+                  onClick={(event) => {}}
                 />
               </div>
             </div>
@@ -488,7 +488,7 @@ function CitizenDashboard() {
                     variant="brand"
                     size="small"
                     icon={<FeatherNavigation />}
-                    onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
+                    onClick={(event) => {}}
                   >
                     Get Directions
                   </LinkButton>
@@ -507,14 +507,14 @@ function CitizenDashboard() {
                   <Button
                     variant="neutral-secondary"
                     icon={<FeatherThumbsUp />}
-                    onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
+                    onClick={(event) => {}}
                   >
                     Yes
                   </Button>
                   <Button
                     variant="neutral-secondary"
                     icon={<FeatherThumbsDown />}
-                    onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
+                    onClick={(event) => {}}
                   >
                     No
                   </Button>
@@ -549,7 +549,7 @@ function CitizenDashboard() {
                 <IconButton
                   size="small"
                   icon={<FeatherMoreVertical />}
-                  onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
+                  onClick={(event) => {}}
                 />
               </div>
             </div>
@@ -585,7 +585,7 @@ function CitizenDashboard() {
                     variant="brand"
                     size="small"
                     icon={<FeatherNavigation />}
-                    onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
+                    onClick={(event) => {}}
                   >
                     Get Directions
                   </LinkButton>
@@ -604,14 +604,14 @@ function CitizenDashboard() {
                   <Button
                     variant="neutral-secondary"
                     icon={<FeatherThumbsUp />}
-                    onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
+                    onClick={(event) => {}}
                   >
                     Yes
                   </Button>
                   <Button
                     variant="neutral-secondary"
                     icon={<FeatherThumbsDown />}
-                    onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
+                    onClick={(event) => {}}
                   >
                     No
                   </Button>

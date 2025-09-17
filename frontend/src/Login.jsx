@@ -14,6 +14,7 @@ import {
   FeatherMail,
 } from '@subframe/core';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function Login() {
   const [showPassword, setShowPassword] = useState(false);
@@ -84,7 +85,7 @@ function Login() {
                 </div>
                 <LinkButton
                   variant="brand"
-                  onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
+                  onClick={(event) => {}}
                 >
                   Forgot password?
                 </LinkButton>
@@ -94,7 +95,7 @@ function Login() {
               <Button
                 className="h-10 w-full flex-none"
                 size="large"
-                onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
+                onClick={(event) => {}}
               >
                 Log in
               </Button>
@@ -109,7 +110,7 @@ function Login() {
                 <OAuthSocialButton
                   className="h-10 w-full flex-none"
                   logo="https://res.cloudinary.com/subframe/image/upload/v1711417516/shared/z0i3zyjjqkobzuaecgno.svg"
-                  onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
+                  onClick={(event) => {}}
                 >
                   Sign in with Google
                 </OAuthSocialButton>
@@ -119,12 +120,13 @@ function Login() {
               <span className="text-body font-body text-subtext-color">
                 New to Civic Samadhan?
               </span>
+              <Link to="/signup">
               <LinkButton
                 variant="brand"
-                onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
+                onClick={(event) => {}}
               >
                 Sign up now
-              </LinkButton>
+              </LinkButton></Link>
             </div>
           </div>
         </div>

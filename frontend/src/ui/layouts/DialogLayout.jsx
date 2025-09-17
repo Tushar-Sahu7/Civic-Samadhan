@@ -9,16 +9,10 @@ import React from "react";
 import { Dialog } from "../components/Dialog";
 import * as SubframeUtils from "../utils";
 
-interface DialogLayoutRootProps extends React.ComponentProps<typeof Dialog> {
-  children?: React.ReactNode;
-  className?: string;
-}
 
-const DialogLayoutRoot = React.forwardRef<
-  React.ElementRef<typeof Dialog>,
-  DialogLayoutRootProps
->(function DialogLayoutRoot(
-  { children, className, ...otherProps }: DialogLayoutRootProps,
+
+const DialogLayoutRoot = React.forwardRef(function DialogLayoutRoot(
+  { children, className, ...otherProps },
   ref
 ) {
   return (
