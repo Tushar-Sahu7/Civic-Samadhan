@@ -7,10 +7,20 @@ import { LinkButton } from './ui/components/LinkButton';
 import { OAuthSocialButton } from './ui/components/OAuthSocialButton';
 import { Switch } from './ui/components/Switch';
 import { TextField } from './ui/components/TextField';
-import { FeatherEye } from '@subframe/core';
-import { DefaultPageLayout } from './ui/layouts/DefaultPageLayout';
+import {
+  FeatherEye,
+  FeatherEyeOff,
+  FeatherLock,
+  FeatherMail,
+} from '@subframe/core';
+import { useState } from 'react';
 
 function Login() {
+  const [showPassword, setShowPassword] = useState(false);
+  const [rememberMe, setRememberMe] = useState(false);
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
   return (
     <div className="flex h-screen w-full flex-col items-center">
       <div className="flex h-full w-full items-center justify-center bg-neutral-50 px-12 py-12">
@@ -33,39 +43,40 @@ function Login() {
                 className="h-auto w-full flex-none"
                 label="Email or phone"
                 helpText=""
+                icon={<FeatherMail />}
               >
                 <TextField.Input
                   placeholder="Enter your email or phone"
-                  value=""
-                  onChange={(event: React.ChangeEvent<HTMLInputElement>) => {}}
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
               </TextField>
               <TextField
                 className="h-auto w-full flex-none"
                 label="Password"
                 helpText=""
+                icon={<FeatherLock />}
               >
-                <div className="flex w-full grow shrink-0 basis-0 items-center gap-2">
+                <div className="flex w-full grow shrink-0 basis-0 items-center gap-2 ">
                   <TextField.Input
-                    type="password"
+                    type={showPassword ? 'text' : 'password'}
                     placeholder="Enter your password"
-                    value=""
-                    onChange={(
-                      event: React.ChangeEvent<HTMLInputElement>
-                    ) => {}}
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
                   />
                   <IconButton
+                    className="hover:bg-transparent active:bg-transparent"
                     size="small"
-                    icon={<FeatherEye />}
-                    onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
+                    icon={showPassword ? <FeatherEye /> : <FeatherEyeOff />}
+                    onClick={() => setShowPassword(!showPassword)}
                   />
                 </div>
               </TextField>
               <div className="flex w-full items-center justify-between">
                 <div className="flex items-center gap-2">
                   <Switch
-                    checked={false}
-                    onCheckedChange={(checked: boolean) => {}}
+                    checked={rememberMe}
+                    onCheckedChange={setRememberMe}
                   />
                   <span className="text-body font-body text-default-font">
                     Remember me

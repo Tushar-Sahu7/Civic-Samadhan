@@ -1,18 +1,27 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Button } from './ui/components/Button';
 import { Checkbox } from './ui/components/Checkbox';
 import { IconButton } from './ui/components/IconButton';
 import { LinkButton } from './ui/components/LinkButton';
 import { TextField } from './ui/components/TextField';
-import { FeatherEye } from '@subframe/core';
+import { FeatherEye, FeatherEyeOff } from '@subframe/core';
 import { FeatherLock } from '@subframe/core';
 import { FeatherMail } from '@subframe/core';
 import { FeatherPhone } from '@subframe/core';
 import { FeatherUser } from '@subframe/core';
 
 function Signup() {
+  const [showPassword, setShowPassword] = useState(false);
+  const [rememberMe, setRememberMe] = useState(false);
+  const [consent, setConsent] = useState(false);
+  const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
+  const [username, setUsername] = useState('');
+
   return (
     <div className="flex h-screen w-full flex-col items-center">
       <div className="container max-w-none flex h-full w-full flex-col items-center justify-center gap-6 bg-default-background py-12">
@@ -34,8 +43,8 @@ function Signup() {
             >
               <TextField.Input
                 placeholder="Enter your full name"
-                value=""
-                onChange={(event: React.ChangeEvent<HTMLInputElement>) => {}}
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
               />
             </TextField>
             <div className="flex w-full items-end justify-center gap-4">
@@ -46,9 +55,10 @@ function Signup() {
                 icon={<FeatherPhone />}
               >
                 <TextField.Input
+                  type="text"
                   placeholder="Enter phone number"
-                  value=""
-                  onChange={(event: React.ChangeEvent<HTMLInputElement>) => {}}
+                  value={phone}
+                  onChange={(e) => setPhone(e.target.value)}
                 />
               </TextField>
               <div className="flex grow shrink-0 basis-0 flex-col items-start gap-1 self-stretch">
@@ -150,9 +160,10 @@ function Signup() {
                 icon={<FeatherMail />}
               >
                 <TextField.Input
+                  type="email"
                   placeholder="Enter your email"
-                  value=""
-                  onChange={(event: React.ChangeEvent<HTMLInputElement>) => {}}
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
               </TextField>
               <div className="flex flex-col items-start gap-2">
@@ -254,14 +265,16 @@ function Signup() {
             >
               <div className="flex w-full grow shrink-0 basis-0 items-center gap-2">
                 <TextField.Input
+                  type={showPassword ? 'text' : 'password'}
                   placeholder="Create a password"
-                  value=""
-                  onChange={(event: React.ChangeEvent<HTMLInputElement>) => {}}
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
                 />
                 <IconButton
+                  className="hover:bg-transparent active:bg-transparent"
                   size="small"
-                  icon={<FeatherEye />}
-                  onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
+                  icon={showPassword ? <FeatherEye /> : <FeatherEyeOff />}
+                  onClick={() => setShowPassword(!showPassword)}
                 />
               </div>
             </TextField>
@@ -272,21 +285,22 @@ function Signup() {
               icon={<FeatherLock />}
             >
               <TextField.Input
+                type="password"
                 placeholder="Confirm your password"
-                value=""
-                onChange={(event: React.ChangeEvent<HTMLInputElement>) => {}}
+                value={confirmPassword}
+                onChange={(e) => setConfirmPassword(e.target.value)}
               />
             </TextField>
             <div className="flex w-full flex-col items-start gap-2">
               <Checkbox
                 label="Remember me"
-                checked={false}
-                onCheckedChange={(checked: boolean) => {}}
+                checked={rememberMe}
+                onCheckedChange={() => setRememberMe(!rememberMe)}
               />
               <Checkbox
                 label="I agree to the Terms and Conditions"
-                checked={false}
-                onCheckedChange={(checked: boolean) => {}}
+                checked={consent}
+                onCheckedChange={() => setConsent(!consent)}
               />
             </div>
             <Button
