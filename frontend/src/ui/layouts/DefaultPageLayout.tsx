@@ -7,6 +7,7 @@
  * Modern navbar — https://app.subframe.com/f5eadd770bce/library?component=Modern+navbar_cba8555a-1e5a-4a57-8c3d-6ad67c2ef976
  */
 
+import {Link} from "react-router-dom"
 import React from 'react';
 import { FeatherBell } from '@subframe/core';
 import { FeatherSettings } from '@subframe/core';
@@ -57,8 +58,8 @@ const DefaultPageLayoutRoot = React.forwardRef<
           Settings
         </Button>
         <div className="flex items-center gap-2 px-2">
-          <Button variant="brand-secondary">Log in</Button>
-          <Button>Sign up</Button>
+          <Link to={"/login"}><Button variant="brand-secondary">Log in</Button></Link>
+          <Link to={"/signup"}><Button>Sign up</Button></Link>
         </div>
       </div>
       {children ? (
