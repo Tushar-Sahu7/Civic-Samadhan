@@ -37,13 +37,13 @@ function IssueReport() {
               <Button
                 variant="neutral-secondary"
                 icon={<FeatherPrinter />}
-                onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
+                onClick={(event) => {}}
               >
                 Export
               </Button>
               <Button
                 icon={<FeatherMousePointer2 />}
-                onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
+                onClick={(event) => {}}
               >
                 Get Direction
               </Button>
@@ -163,7 +163,7 @@ function IssueReport() {
                 variant="neutral-secondary"
                 size="small"
                 icon={<FeatherUserPlus />}
-                onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
+                onClick={(event) => {}}
               >
                 Assign More
               </Button>
@@ -228,7 +228,7 @@ function IssueReport() {
                       variant="brand-secondary"
                       icon={<FeatherPhone />}
                       onClick={(
-                        event: React.MouseEvent<HTMLButtonElement>
+                        event
                       ) => {}}
                     >
                       Call
@@ -262,7 +262,7 @@ function IssueReport() {
                       variant="brand-secondary"
                       icon={<FeatherPhone />}
                       onClick={(
-                        event: React.MouseEvent<HTMLButtonElement>
+                        event
                       ) => {}}
                     >
                       Call
