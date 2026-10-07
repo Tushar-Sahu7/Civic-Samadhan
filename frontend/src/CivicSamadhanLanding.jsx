@@ -181,7 +181,7 @@ function CivicSamadhanLanding() {
                   variant="brand-primary"
                   size="large"
                   icon={<FeatherAlertCircle />}
-                  onClick={(event) => {}}
+                  onClick={( ) => {}}
                 >
                   Report an Issue Now
                 </Button></Link>
@@ -196,7 +196,7 @@ function CivicSamadhanLanding() {
                   variant="neutral-primary"
                   size="large"
                   icon={<FeatherMap />}
-                  onClick={(event) => {}}
+                  onClick={( ) => {}}
                 >
                   See Issues in your area
                 </Button>
@@ -686,7 +686,7 @@ function CivicSamadhanLanding() {
                   variant="brand-secondary"
                   size="small"
                   icon={<FeatherMapPin />}
-                  onClick={(event) => {}}
+                  onClick={( ) => {}}
                 >
                   Use My Location
                 </Button>
@@ -724,7 +724,7 @@ function CivicSamadhanLanding() {
                           size="small"
                           icon={<FeatherMoreVertical />}
                           onClick={(
-                            event
+                             
                           ) => {}}
                         />
                       </div>
@@ -767,7 +767,7 @@ function CivicSamadhanLanding() {
                             size="small"
                             icon={<FeatherNavigation />}
                             onClick={(
-                              event
+                               
                             ) => {}}
                           >
                             Get Directions
@@ -788,7 +788,7 @@ function CivicSamadhanLanding() {
                             variant="neutral-secondary"
                             icon={<FeatherThumbsUp />}
                             onClick={(
-                              event
+                               
                             ) => {}}
                           >
                             Yes
@@ -797,7 +797,7 @@ function CivicSamadhanLanding() {
                             variant="neutral-secondary"
                             icon={<FeatherThumbsDown />}
                             onClick={(
-                              event
+                               
                             ) => {}}
                           >
                             No
@@ -831,7 +831,7 @@ function CivicSamadhanLanding() {
                           size="small"
                           icon={<FeatherMoreVertical />}
                           onClick={(
-                            event
+                             
                           ) => {}}
                         />
                       </div>
@@ -875,7 +875,7 @@ function CivicSamadhanLanding() {
                             size="small"
                             icon={<FeatherNavigation />}
                             onClick={(
-                              event
+                               
                             ) => {}}
                           >
                             Get Directions
@@ -896,7 +896,7 @@ function CivicSamadhanLanding() {
                             variant="neutral-secondary"
                             icon={<FeatherThumbsUp />}
                             onClick={(
-                              event
+                               
                             ) => {}}
                           >
                             Yes
@@ -905,7 +905,7 @@ function CivicSamadhanLanding() {
                             variant="neutral-secondary"
                             icon={<FeatherThumbsDown />}
                             onClick={(
-                              event
+                               
                             ) => {}}
                           >
                             No
@@ -942,7 +942,7 @@ function CivicSamadhanLanding() {
                           size="small"
                           icon={<FeatherMoreVertical />}
                           onClick={(
-                            event
+                             
                           ) => {}}
                         />
                       </div>
@@ -985,7 +985,7 @@ function CivicSamadhanLanding() {
                             size="small"
                             icon={<FeatherNavigation />}
                             onClick={(
-                              event
+                               
                             ) => {}}
                           >
                             Get Directions
@@ -1006,7 +1006,7 @@ function CivicSamadhanLanding() {
                             variant="brand-secondary"
                             icon={<FeatherStar />}
                             onClick={(
-                              event
+                               
                             ) => {}}
                           >
                             Rate Solution
@@ -1341,7 +1341,7 @@ function CivicSamadhanLanding() {
               className="hover:shadow-lg:hover hover:shadow-lg shadow-md transition-all duration-200"
               size="large"
               icon={<FeatherArrowRight />}
-              onClick={(event) => {}}
+              onClick={( ) => {}}
             >
               Get Started Now
             </Button>
@@ -1364,19 +1364,19 @@ function CivicSamadhanLanding() {
               <div className="flex w-full items-center justify-center gap-2">
                 <IconButton
                   icon={<FeatherTwitter />}
-                  onClick={(event) => {}}
+                  onClick={() => {}}
                 />
                 <IconButton
                   icon={<FeatherGithub />}
-                  onClick={(event) => {}}
+                  onClick={() => {}}
                 />
                 <IconButton
                   icon={<FeatherSlack />}
-                  onClick={(event) => {}}
+                  onClick={() => {}}
                 />
                 <IconButton
                   icon={<FeatherYoutube />}
-                  onClick={(event) => {}}
+                  onClick={() => {}}
                 />
               </div>
             </div>

@@ -1,6 +1,5 @@
 // @subframe/sync-disable
 // export default {
-//   // ...
 
 //   theme: {
 //     extend: {
